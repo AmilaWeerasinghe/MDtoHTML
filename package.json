@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "lint" : "eslint .",
+    "lint": "eslint .",
     "dev": "nodemon -e js,md,html --ignore dist/ src/index.js",
     "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,5 +17,9 @@
     "eslint": "^8.7.0",
     "nodemon": "^2.0.15",
     "prettier": "^2.5.1"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "grey-matter": "0.0.0"
   }
 }
