@@ -5,21 +5,30 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "lint": "eslint .",
     "dev": "nodemon -e js,md,html --ignore dist/ src/index.js",
     "start": "node src/index.js",
-    "test": "mocha ./src/*.spec.js"
+    "test": "mocha ./src/*.spec.js",
+    "lintfix": "eslint src --fix --cache"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^8.7.0",
+    "@typescript-eslint/eslint-plugin": "^5.11.0",
+    "@typescript-eslint/parser": "^5.11.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.9.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^26.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "mocha": "^9.2.0",
     "nodemon": "^2.0.15",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.5"
   },
   "dependencies": {
+    "eslint-config-airbnb": "^19.0.4",
     "gray-matter": "^4.0.3",
     "grey-matter": "0.0.0",
     "marked": "^4.0.12"
