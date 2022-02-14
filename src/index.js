@@ -9,7 +9,7 @@ const readFile = (filename) => {
 
     const parser = matter(rawFile);
     const html = marked(parser.content);
-    console.log(html);
+    //console.log(html);
 }
 
 readFile(path.join(path.resolve(), 'src/pages/index.md'))
