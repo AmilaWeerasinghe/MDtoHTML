@@ -1,4 +1,4 @@
-name: Node.js CI merge
+name: Node.js CI PR to master
 
 on:
   push:
