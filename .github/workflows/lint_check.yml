@@ -1,9 +1,8 @@
-name: Node.js CI PR to master
+name: Lint check on push to develop and master
 
 on:
   push:
-  pull_request:
-    branches: [master]
+    branches: [develop, master]
 
 jobs:
   build:
@@ -22,4 +21,4 @@ jobs:
           cache: "npm"
       - run: npm ci
       - run: npm run build --if-present
-      - run: npm test
+      - run: npm run lintfix
